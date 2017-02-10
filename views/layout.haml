@@ -1,0 +1,133 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, shrink-to-fit=no, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Resume - Portfolio
+    / Bootstrap Core CSS
+    %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+    / Custom CSS
+    %link{:href => "css/style.css", :rel => "stylesheet"}/
+  %body
+    #wrapper
+      / Sidebar
+      #sidebar-wrapper
+        .sidebar-nav
+          .profile
+            #portrait
+              %a#menu-toggle{:href => "#menu-toggle"}
+                %img.btn-close{:alt => "Close", :height => "40", :src => "images/Close.png", :width => "40"}/
+              %div
+                %h2 Al Rayhan
+                %p UI/UX Expert
+            %nav.nav.nav-pills.nav-stacked.navbar.sidenav
+              %div
+                %a{:href => "index.html"} Home
+              %div
+                %a{:href => "#about-me"} About Me
+              %div
+                %a{:href => "#education"} Education
+              %div
+                %a{:href => "#work-ex"} Work Experience
+              %div
+                %a{:href => "#my-skills"} Skills
+              %div
+                %a{:href => "portfolio.html"} Portfolio
+              %div
+                %a{:href => "#message"} Contacts
+            %br/
+      / /#sidebar-wrapper
+      / Page Content
+      #page-content-wrapper
+        .container-fluid
+          .main
+            #header
+              #content-header.text-center
+                %h1 Lets Make Something Great
+                %h5 I’m an UI designer that prides ourself on being strategic brand partners and
+                %h5 awesome product providers
+                %button.box Hire me!
+            #portfolio
+              %h2 Portfolio
+              %nav.navbar
+                .container-fluid
+                  %ul.nav
+                    %li.col-lg-3.col-md-3
+                      %a{:href => "#"} Branding
+                    %li.col-lg-3.col-md-3
+                      %a{:href => "#"} Web Design
+                    %li.col-lg-3.col-md-3
+                      %a{:href => "#"} Animation
+                    %li.col-lg-3.col-md-3
+                      %a{:href => "#"} UI/UX
+              %section.row
+                .portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/1.png", :width => "360"}/
+                  %h3 Marketing Partner
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+                #color2.portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/2.png", :width => "360"}/
+                  %h3 Website Design
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+              %section.row
+                #color3.portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/3.png", :width => "360"}/
+                  %h3 Music Player Design
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+                #color4.portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/4.png", :width => "360"}/
+                  %h3 Marketing Partner
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+              %section.row
+                #color5.portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/5.png", :width => "360"}/
+                  %h3 Marketing Partner
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+                #color6.portfolio-tile.col-lg-6.col-md-6
+                  %img{:alt => "", :height => "225", :src => "images/portfolio/6.png", :width => "360"}/
+                  %h3 Software Developement
+                  %p Branding UI/UX Article
+                  %a{:href => "single-portfolio.html"} View Project &gt;
+            %footer
+              .message
+                %h4 Leave a Message:
+                %div
+                  %input.form-control{:placeholder => "Name*", :type => "text"}/
+                  %input.form-control{:placeholder => "Email*", :type => "text"}/
+                  %input.form-control{:placeholder => "Message*", :type => "text"}/
+                %div
+                  %button.box Hire me!
+              %ul
+                %li
+                  %img{:alt => "img", :src => "images/Home.png"}/
+                  %div
+                    %h4 Location
+                    %p 324, Golden Tower, Amborkhana, Sylhet
+                %li
+                  %img{:alt => "img", :src => "images/Mail.png"}/
+                  %div
+                    %h4 Email
+                    %p junaed@deviserweb.com
+                %li
+                  %img{:alt => "img", :src => "images/Phone.png"}/
+                  %div
+                    %h4 Toll Free Call
+                    %p 0800 234 6578
+              %div
+                =yield 
+      / /#page-content-wrapper
+    / /#wrapper
+    / jQuery
+    %script{:src => "js/jquery.js"}
+    / Bootstrap Core JavaScript
+    %script{:src => "js/bootstrap.min.js"}
+    %script{:src => "js/script.js"}
